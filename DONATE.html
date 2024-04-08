@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate to [Your Cause]</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #9fbfce;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #666;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Support the needs</h1>
+    <p>Your contribution makes a difference</p>
+  </header>
+  
+  <main>
+    <section class="donation-methods">
+      <h2>Ways to Donate</h2>
+      <ul>
+        <li>
+          <h3>Online Donation  </h3>
+          <p>Securely donate online using your credit/debit card or PayPal.</p>
+          <button onclick="redirectToPaymentGateway()">Donate Now</button>
+        </li>
+        <li>
+          <h3>Bank Transfer</h3>
+          <p>Transfer funds directly to our bank account. Contact us for details.</p>
+          <button onclick="showBankDetails()">View Bank Details</button>
+        </li>
+        <li>
+          <h3>Cryptocurrency</h3>
+          <p>Donate using Bitcoin, Ethereum, or other cryptocurrencies.</p>
+          <button onclick="showCryptoAddress()">View Crypto Address</button>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="why-donate">
+      <h2>Why Donate?</h2>
+      <p>Explain briefly why supporting your cause is important and how donations are utilized.</p>
+    </section>
+    
+    <section class="donation-form">
+      <h2>Make a Difference Today</h2>
+      <p>Your support empowers us to continue our mission. Please donate generously.</p>
+      <form action="process_donation.php" method="POST">
+        <label for="amount">Amount ($)</label>
+        <input type="number" id="amount" name="amount" required>
+        <button type="submit">Donate Now</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Contact us at donate@yourcause.org for any inquiries or assistance.</p>
+  </footer>
+
+  <!-- JavaScript to handle interactions (e.g., showing bank details, crypto addresses) -->
+  <script>
+    function redirectToPaymentGateway() {
+      // Redirect to your payment gateway URL
+      window.location.href = "https://yourpaymentgateway.com";
+    }
+
+    function showBankDetails() {
+      // Show bank account details
+      alert("Bank Name: [Your Bank Name]\nAccount Number: [Your Account Number]\nRouting Number: [Your Routing Number]");
+    }
+
+    function showCryptoAddress() {
+      // Show cryptocurrency address
+      alert("Bitcoin Address: [Your Bitcoin Address]\nEthereum Address: [Your Ethereum Address]\nOther Crypto Addresses: [Specify if any]");
+    }
+  </script>
+</body>
+</html>
