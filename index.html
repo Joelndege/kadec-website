@@ -69,13 +69,21 @@
         .navbar-nav .nav-item.active a.nav-link:hover {
         color: rgb(4, 141, 77); 
     }
-
+    @media only screen and (max-width: 768px) {
+            /* Adjust styles for smaller screens here */
+            .title h1 {
+                font-size: 2.5rem; /* Decrease font size */
+            }
+            .title h2 {
+                font-size: 70%; /* Decrease font size */
+            }
+        }
         
     </style>
 </head>
-<body style="background-color: rgb(7, 2, 90); position: relative; padding-top: 100px; margin: 0px; width: 100%; box-sizing: border-box;">
+<body style="background-color: rgb(7, 2, 90); position: relative; padding-top: 0; margin: 0px;  box-sizing: border-box; font-family: sans-serif;">
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg  ">
         <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="logo">
             <div class="title">
@@ -112,6 +120,7 @@
         </div>
     </nav>
 </header>
+
 
 
 <div class="modal fade" id="aboutUsModal" tabindex="-1" role="dialog" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
@@ -353,8 +362,10 @@
         
     </div>
 </div>
+
 <footer>
-    <nav class="footer-bar" style=" position: relative; background-color: rgb(0, 0, 19);">
+    <nav class="footer-bar" style="background-color: rgb(0, 0, 19);">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                     <a class="navbar-brand" style="margin-top: 5px; margin-left: 10px;">
@@ -367,9 +378,9 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-3" style="text-align: right;">
                     <ul class="navbar-nav" style="display: flex; flex-direction: row; list-style: none; padding: 0;">
-                        <li class="-item" style="margin-left: 20px;">
+                        <li class="nav-item" style="margin-left: 20px;">
                             <a class="nav-link" href="#" style="color:rgb(167, 165, 165); font-size: 10%;">
-                            <h1 > follow </h1> 
+                                <h1>Follow</h1>
                             </a>
                         </li>
                         <li class="-item" style="margin-left: 20px;">
@@ -383,16 +394,6 @@
                             </a>
                         </li>
                         <li class="item" style="margin-left: 20px;">
-                            <a class="nav-link" href="#" style="color: transparent;">
-                                <img src="images/twitter.png" style="height: 40px ;"> 
-                            </a>
-                        </li>
-                        <li class="item" style="margin-left: 20px;">
-                            <a class="nav-link" href="#" style="color: transparent;">
-                            <img src="images/instagram.png" style="height: 40px;"> 
-                            </a>
-                        </li>
-                        <li class="item" style="margin-left: 20px;">
                             <a class="nav-link" href="mailto:your-email@example.com?subject=Subject%20Here&body=Body%20Text%20Here" style="color: transparent;">
                             <img src="images/yahoo.png" style="height: 40px;"> 
                             </a>
@@ -400,22 +401,19 @@
                     </ul>
                 </div>
             </div>
-            <br style="color: beige;">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                     <div class="address" style="color: antiquewhite;">
-                        <p>
-                            <ul>
-                                <li>Contact Person: Paul Ewin Gondwe</li>
-                                <li>Position: Executive Director </li>
-                                <li>Cell: +265999243958</li>
-                                <li>Phone: +2651362437</li>
-                                <li>E-Mail: kgadebateclub@yahoo.com or paulgondwe40@gmail.com</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>Contact Person: Paul Ewin Gondwe</li>
+                            <li>Position: Executive Director</li>
+                            <li>Cell: +265999243958</li>
+                            <li>Phone: +2651362437</li>
+                            <li>E-Mail: kgadebateclub@yahoo.com or paulgondwe40@gmail.com</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6"mb-3>
+                <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
                     <div class="partners" style="display: flex; flex-direction: row;">
                         <div>
                             <img src="images/ireland.png" style="max-height: 50px;">
@@ -427,6 +425,12 @@
                         <div>
                             <img src="images/waterbaord.png" style="max-height: 40px;">
                         </div>
+    
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+                    <div class="partners" style="display: flex; flex-direction: row;">
+                       
                         <div>
                             <img src="images/un.svg" style="max-height: 30px;">
                         </div>
