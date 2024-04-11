@@ -84,20 +84,35 @@
         align-items: center; /* Align items in center */
     }
 }
+    /* CSS for smaller screens */
+/* CSS for smaller screens */
+@media (max-width: 576px) {
+    .logo-img {
+        max-width: 65px; /* Adjust the maximum width as needed */
+    }
+    .logo-text {
+        font-size: 25px !important; /* Adjust the font size as needed */
+    }
+    .club-name {
+        font-size: 15px !important; /* Adjust the font size as needed */
+    }
+}
+
 
         
     </style>
 </head>
 <body style="background-color: rgb(7, 2, 90); position: relative; padding-top: 0; margin: 0px;  box-sizing: border-box; font-family: sans-serif;">
 <header>
-    <nav class="navbar navbar-expand-lg  " style="z-index: 999; position: fixed; width: 100%;">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="logo">
-            <div class="title">
-                <h1>KADEC</h1>
-                <h2>Karonga Debate Club</h2>
-            </div>
-        </a>
+    <nav class="navbar navbar-expand-lg  " style="z-index: 999; position: fixed; width: 100%; ">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="logo" class="img-fluid logo-img"> <!-- Added img-fluid class for responsive images -->
+                <div class="title">
+                    <h1 class="logo-text">KADEC</h1> <!-- Added class for logo text -->
+                    <h2 class="club-name">Karonga Debate Club</h2> <!-- Added class for club name -->
+                </div>
+            </a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: transparent; border: none;">
             <img src="images/menu-bar.png" alt="Toggle navigation" style="width: 30px; height: auto;">
         </button>
@@ -242,10 +257,10 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="down-container" style="margin-left: 15px; margin-top: 80px; padding: 10; height: fit-content; background-color:   rgb(255, 255, 255); color: rgb(4, 0, 22);">
+            <div class="down-container" style="margin: -40px; margin-top: 80px; padding: 0; height: fit-content;  color: gold">
                 <h1>
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse1" aria-expanded="false" aria-controls="objectivesCollapse1">
-                        <h1 style="color: black;">Our Goals</h1>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse1" aria-expanded="false" aria-controls="objectivesCollapse1"  style="background-color: rgba(255, 255, 255, 0.781); width: 90%; border-radius: 20px; margin: 25px; padding: 10px;">
+                        <h1 style="color: black; font-size: 30px;">Our Goals</h1>
                     </button>
                 </h1>
                 <div class="collapse" id="objectivesCollapse1" style="margin: 20px; padding: auto;">
@@ -258,10 +273,10 @@
 <div class="container mt-6">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="down-container" style="margin: 15px; padding: 10; height: fit-content; background-color:   rgb(255, 255, 255); color: rgb(4, 0, 22);">
+            <div class="down-container" style="margin: -40px; padding: 50; height: fit-content;  color: gold;">
                 <h1>
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse2" aria-expanded="false" aria-controls="objectivesCollapse2">
-                        <h1 style="color: black;">Target Groups</h1>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse2" aria-expanded="false" aria-controls="objectivesCollapse2" style="background-color: rgba(255, 255, 255, 0.76); width: 90%; border-radius: 20px; margin: 25px; padding: 10px;">
+                        <h1 style="color: black; font-size: 30px;">Target Groups</h1>
                     </button>
                 </h1>
                 <div class="collapse" id="objectivesCollapse2" style="margin: 20px; padding: auto;">
@@ -271,19 +286,20 @@
         </div>
     </div>
 </div>
+
 <div class="container mt-7">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="down-container" style="margin: 15px; padding: 10; height: fit-content; background-color:  rgb(255, 255, 255); color: rgb(4, 0, 22);">
+            <div class="down-container" style="margin: -40px; padding: -30px; height: fit-content;  color: gold;">
                 <h1>
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse3" aria-expanded="false" aria-controls="objectivesCollapse3">
-                       <h1 style="color: black;"> Main Objectives</h1>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse3" aria-expanded="false" aria-controls="objectivesCollapse3" style="background-color: rgba(248, 248, 248, 0.774); width: 90%; border-radius: 20px; margin: 25px; padding: 10px;">
+                       <h1 style="color: black; font-size: 30px;"> Main Objectives</h1>
                     </button>
                 </h1>
                 <div class="collapse" id="objectivesCollapse3">
                     <p>
                         <ul>     
-                            <li>Improve the health conditions of communities through elimination of health hazards in the environment that lead to untimely death among adults and children. 2</li>
+                            <li>Improve the health conditions of communities through elimination of health hazards in the environment that lead to untimely death among adults and children. </li>
                             <li>Improve learning environment through supporting school learning facilities.</li>
                             <li>Contribute to strengthen democratic governance through advocacy at all levels.</li>
                             <li>Promote and safeguard human rights through civic education and community mobilization.</li>
