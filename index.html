@@ -6,6 +6,9 @@
     <title>Kadec Web Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+
     <style>
        
         .navbar {
@@ -40,7 +43,7 @@
         
         .swiper {
             width: 100%;
-            height: 200px !important;
+            height: 300px !important;
             margin-bottom: 20px !important;
         
         }
@@ -49,6 +52,32 @@
             height: 100%;
             object-fit: cover;
         }
+        
+    .swiper {
+        height: 300px; /* Default height for small screens */
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Media query for medium screens and up */
+    @media (min-width: 768px) {
+        .swiper {
+            height: 400px;
+        }
+    }
+
+    /* Media query for large screens and up */
+    @media (min-width: 992px) {
+        .swiper {
+            height: 500px;
+        }
+    }
+
+
         .navbar-nav .nav-item a.nav-link:hover {
         color: rgb(2, 129, 51);
         text-decoration: underline; 
@@ -271,6 +300,7 @@ h1 {
         .latest {
             background-color: white;
             padding: 20px;
+            
         }
 
         .latest h1 {
@@ -369,6 +399,41 @@ h1 {
             justify-content: center;
             gap: 10px;
         }
+        .image-container {
+            position: relative;
+            max-width: 100%; 
+            margin: 20px; 
+            margin-top: 40px;
+            
+        }
+
+        .right-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; 
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 150px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.781); 
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+        }
+
+        .section-container {
+            margin-bottom: 30px; 
+        }
+
+        .btn-link h1 {
+            font-size: 30px;
+            color: black;
+            margin: 0;
+        }
+    
     </style>
 </head>
 <body style="background-color: rgb(7, 2, 90); position: relative; padding-top: 0; margin: 0px;  box-sizing: border-box; font-family: sans-serif; width: 100%;">
@@ -525,69 +590,71 @@ h1 {
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 </div>
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="down-container" style="margin: -40px; margin-top: 10px; padding: 0; height: fit-content;  color: gold;">
-                <h1>
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse1" aria-expanded="false" aria-controls="objectivesCollapse1"  style="background-color: rgba(255, 255, 255, 0.781); width: 90%; border-radius: 20px; margin: 5px; padding: 10px;">
-                        <h1 style="color: black; font-size: 30px;">Our Goals</h1>
-                    </button>
-                </h1>
-                <div class="collapse" id="objectivesCollapse1" style="margin: 20px; padding: 15px;">
-                    <p>The Karonga Debate Club (KADEC) endeavors to contribute to the enhancement of vulnerable communities' living standards through multifaceted approaches. Our goal is to work in a holistic manner, empowering the most vulnerable populations to actively engage in public life, thus striving towards a comprehensive improvement in their quality of life. Through community mobilization, capacity building, advocacy efforts, and the strengthening of grassroots institutions, KADEC aims to create sustainable change and foster resilience within the communities we serve.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container mt-6">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-3" >
-            <div class="down-container" style="margin: -40px; padding: 50; height: fit-content;  color: gold;">
-                <h1>
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse2" aria-expanded="false" aria-controls="objectivesCollapse2" style="background-color: rgba(255, 255, 255, 0.76); width: 90%; border-radius: 20px; margin: 5px; padding: 10px;">
-                        <h1 style="color: black; font-size: 30px;">Target Groups</h1>
-                    </button>
-                </h1>
-                <div class="collapse" id="objectivesCollapse2" style="margin: 20px; padding: 15px;">
-                    <p>KADEC basically works mainly for the poorest of the poor in the rural areas of the province. Its target groups include in the poor and disadvantaged rural communities with emphasis on the most vulnerable men, women and children, youth, the elderly, people living with disabilities and orphans in Malawi who are still living in miserable conditions and deprived of very basic necessities of life that. For achieving its goal and objective, KADEC target groups also include health workers, paramedics and other staff related to health issues, teachers, students, environmentalists and stakeholders in the field of health, education and environment.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container mt-7">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <div class="down-container" style="margin: -40px; padding: -30px; height: fit-content;  color: gold;">
-                <h1>
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse3" aria-expanded="false" aria-controls="objectivesCollapse3" style="background-color: rgba(248, 248, 248, 0.774); width: 90%; border-radius: 20px; margin: 10px; padding: 10px;">
-                       <h1 style="color: black; font-size: 30px;"> Main Objectives</h1>
-                    </button>
-                </h1>
-                <div class="collapse" id="objectivesCollapse3">
-                    <p>
-                        <ul>     
-                            <li>Improve the health conditions of communities through elimination of health hazards in the environment that lead to untimely death among adults and children. </li>
-                            <li>Improve learning environment through supporting school learning facilities.</li>
-                            <li>Contribute to strengthen democratic governance through advocacy at all levels.</li>
-                            <li>Promote and safeguard human rights through civic education and community mobilization.</li>
-                            <li>Promote gender equality and the empowerment of women and girls.</li>
-                            <li>Create an enabling environment for youth participation in all spheres of life at all levels.</li>
-                            <li>Enhance social and economic development and improved quality of life for the poor and disadvantaged rural communities with emphasis on women and children, youth, the elderly, the disabled persons and orphans.</li>
-                            <li>Promote and protect child rights through community mobilization.</li> 
-                        </ul>
-                    </p>  
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sections Column -->
+            <div class="col-lg-8 col-md-12">
+                <div class="section-container">
+                    <div class="down-container" style="margin: -40px; margin-top: 10px; padding: 0; height: fit-content; color: gold;">
+                        <h1>
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse1" aria-expanded="false" aria-controls="objectivesCollapse1" style="background-color: rgba(255, 255, 255, 0.781); width: 90%; border-radius: 20px; margin: 20px; padding: 10px;">
+                                <h1>Our Goals</h1>
+                            </button>
+                        </h1>
+                        <div class="collapse" id="objectivesCollapse1" style="margin: 20px; padding: 15px;">
+                            <p>The Karonga Debate Club (KADEC) endeavors to contribute to the enhancement of vulnerable communities' living standards through multifaceted approaches. Our goal is to work in a holistic manner, empowering the most vulnerable populations to actively engage in public life, thus striving towards a comprehensive improvement in their quality of life. Through community mobilization, capacity building, advocacy efforts, and the strengthening of grassroots institutions, KADEC aims to create sustainable change and foster resilience within the communities we serve.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <div class="down-container" style="margin: -40px; padding: 50; height: fit-content; color: gold;">
+                        <h1>
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse2" aria-expanded="false" aria-controls="objectivesCollapse2" style="background-color: rgba(255, 255, 255, 0.76); width: 90%; border-radius: 20px; margin: 20px; padding: 10px;">
+                                <h1>Target Groups</h1>
+                            </button>
+                        </h1>
+                        <div class="collapse" id="objectivesCollapse2" style="margin: 20px; padding: 15px;">
+                            <p>KADEC basically works mainly for the poorest of the poor in the rural areas of the province. Its target groups include in the poor and disadvantaged rural communities with emphasis on the most vulnerable men, women and children, youth, the elderly, people living with disabilities and orphans in Malawi who are still living in miserable conditions and deprived of very basic necessities of life that. For achieving its goal and objective, KADEC target groups also include health workers, paramedics and other staff related to health issues, teachers, students, environmentalists and stakeholders in the field of health, education and environment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <div class="down-container" style="margin: -40px; padding: -30px; height: fit-content; color: gold;">
+                        <h1>
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse3" aria-expanded="false" aria-controls="objectivesCollapse3" style="background-color: rgba(248, 248, 248, 0.774); width: 90%; border-radius: 20px; margin: 10px; padding: 10px;">
+                                <h1>Main Objectives</h1>
+                            </button>
+                        </h1>
+                        <div class="collapse" id="objectivesCollapse3">
+                            <ul style="margin-left: -27px;">
+                                <li>Improve the health conditions of communities through elimination of health hazards in the environment that lead to untimely death among adults and children.</li>
+                                <li>Improve learning environment through supporting school learning facilities.</li>
+                                <li>Promote and safeguard human rights through civic education and community mobilization.</li>
+                                <li>Promote gender equality and the empowerment of women and girls.</li>
+                                <li>Create an enabling environment for youth participation in all spheres of life at all levels.</li>
+                                <li>Enhance social and economic development and improved quality of life for the poor and disadvantaged rural communities with emphasis on women and children, youth, the elderly, the disabled persons and orphans.</li>
+                                <li>Promote and protect child rights through community mobilization.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image Column -->
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="image-container">
+                    <img src="images/children.webp" alt="Image" class="right-image">
+                    <div class="text-overlay">Your participation makes a difference</div>
                 </div>
             </div>
         </div>
-        
     </div>
-</div>
-<div class="project" style="padding: 10px; margin: 10px; color: rgb(0, 0, 0); background-color: white; overflow: hidden ;border-radius: 50px;">
-    <h1><b>Project In Progress...</b></h1>
+
+<div class="project" style="padding: 10px; margin: 10px; color: rgb(0, 0, 0); background-color: rgba(255, 5, 5, 0.329); overflow: hidden ;border-radius: 50px;">
+    <h1 style="color: white;"><b>Project In Progress...</b></h1>
     <div class="container2">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -746,12 +813,13 @@ h1 {
         
     </div>
 </div>
-<div class="latest" style="border-radius: 50px;" >
-    <h1><b>Latest from KADEC</b></h1>
+<div class="latest" style="border-radius: 50px;">
+    <h1 style="text-align: center;"><b>Latest from KADEC</b></h1>
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
             <div class="card">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                <div class="card-body">
                     <p class="card-text">appending................</p>
                 </div>
             </div>
@@ -782,6 +850,7 @@ h1 {
         </div>
     </div>
 </div>
+
 <footer>
     <nav class="footer-bar" style="background-color: rgb(0, 0, 19);">
         <div class="container">
