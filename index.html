@@ -12,7 +12,7 @@
     <style>
        
         .navbar {
-            background-color: rgb(82, 4, 155);
+            background-color: rgb(1, 71, 66);
         }
         
         .container {
@@ -41,27 +41,68 @@
             margin-left: 5px;
         }
         
+       
         .swiper {
-            width: 100%;
-            height: 300px !important;
-            margin-bottom: 20px !important;
-        
-        }
-        .swiper-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-    .swiper {
-        height: 250px; /* Default height for small screens */
-    }
+    height: 400px !important; /* Default height for small screens */
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
 
-    .swiper-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.swiper-slide img {
+    width: 100%;
+    height: 100%; /* Make the image fully fit the div */
+    object-fit: cover; /* Ensure the image fits without being cropped */
+}
+
+.centered-rectangle {
+    position: absolute;
+    width: 450px;
+    height: 200px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the rectangle */
+    background: rgba(0, 95, 107, 0.74); /* Blue transparent background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px; /* Optional padding for the content */
+    box-sizing: border-box; /* Ensures padding doesn't increase size */
+    border-radius: 20px;
+}
+
+.message {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.learn-more {
+    margin-top: 10px;
+    padding: -1px 20px;
+    background-color: rgba(22, 43, 235, 0.753);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 8px; /* Rounded square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* Adjust width as needed */
+    font-weight: bold;
+}
+
+.arrow {
+    margin-left: 8px; /* Space between text and arrow */
+    font-size: 1.2rem;
+}
+
+.learn-more:hover {
+    background-color: lightblue; /* Optional: Hover effect for the link */
+    color: white;
+}
+
+
 
     /* Media query for medium screens and up */
     @media (min-width: 768px) {
@@ -146,7 +187,7 @@
             gap: 10px;
             object-fit: cover;
             text-align: left;
-            border-radius: 10px;
+         
         }
         h1 {
     text-align: center;
@@ -161,7 +202,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    border-radius: 50px; /* Adjust the value to get the desired oval shape */
     overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
     padding: 10px; /* Optional: Adds padding inside the container */
     background-color: #f0f0f0; /* Optional: Adds a background color */
@@ -254,7 +294,7 @@ h1 {
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to right, rgba(0, 0, 255, 0.7), rgba(0, 0, 255, 0.1));
+            background: rgba(4, 63, 9, 0.466);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -298,8 +338,10 @@ h1 {
             }
         }
         .latest {
-            background-color: rgb(218, 99, 119);
-            padding: 20px;
+            background-color: rgb(22, 6, 253);
+            padding: 0px;
+            width: 100%;
+
             
         }
 
@@ -433,7 +475,130 @@ h1 {
             color: black;
             margin: 0;
         }
-    
+ 
+         
+
+
+        .body01 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(1, 71, 66)!important;
+    color: rgb(0, 0, 0);
+}
+
+.container01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+/* Sections styling */
+.section01 {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    box-shadow: #000;
+}
+
+.section01 h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    box-shadow: #000;
+}
+
+/* Image Placeholder Styling */
+.image-placeholder {
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: #000;
+}
+
+.image-placeholder img, .image-placeholder video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: #000;
+}
+
+/* Responsive Typography */
+p, a {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+    .section01 {
+        flex: 1 1 48%;
+        margin: 1%;
+        box-shadow: #000;
+    }
+
+    .image-placeholder img, .image-placeholder video {
+        height: 100px;
+        box-shadow: #000;
+    }
+
+    p, a {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section01 {
+        flex: 1 1 30%;
+        margin: 1%;
+        box-shadow: #000;
+    }
+
+    .image-placeholder img, .image-placeholder video {
+        height: 200px;
+        box-shadow: #000;
+    }
+
+    p, a {
+        font-size: 1.0em;
+    }
+}
+.section01 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: #000;
+}
+
+.story {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Space between stories */
+}
+
+.image-placeholder {
+    flex: 0 0 auto; /* Prevents the image from growing or shrinking */
+    margin-right: -250px; /* Space between image and text */
+    box-shadow: #000;
+}
+
+.image-placeholder img {
+    height: 90px;
+    width: 100px;
+    object-fit: cover; /* Adjusts image aspect ratio */
+    box-shadow: #000;
+}
+
+.text-content {
+    flex: 1; 
+}
+
+.text-content p {
+    margin: 0 0 2px; 
+}
+
+
     </style>
 </head>
 <body style="background-color: rgb(7, 2, 90); position: relative; padding-top: 0; margin: 0px;  box-sizing: border-box; font-family: sans-serif; width: 100%;">
@@ -454,23 +619,23 @@ h1 {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: rgb(238, 230, 230); background-color: black; padding: 5px; margin: 0px;" data-toggle="modal" data-target="#aboutUsModal" >
-                        About Us
+                    <a class="nav-link" href="#" style="color: rgb(238, 230, 230); background-color: rgb(1, 71, 66); padding: 5px; margin: 0px;" data-toggle="modal" data-target="#aboutUsModal" >
+                        About Us <b>⇓</b>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: rgb(238, 230, 230); background-color: black; padding: 5px; margin: 0px;" data-toggle="modal" data-target="#whatWeDoModal">
-                        What we do
+                    <a class="nav-link" href="#" style="color: rgb(238, 230, 230); background-color: rgb(1, 71, 66); padding: 5px; margin: 0px;" data-toggle="modal" data-target="#whatWeDoModal">
+                        What we do ⇓
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: rgb(238, 230, 230); background-color: black; padding: 5px; margin: 0px;" data-toggle="modal" data-target="#whereWeWorkModal">
-                        Where We Work
+                    <a class="nav-link" href="#" style="color: rgb(238, 230, 230); background-color: rgb(1, 71, 66); padding: 5px; margin: 0px;" data-toggle="modal" data-target="#whereWeWorkModal">
+                        Where We Work ⇓
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="color: white; background-color:black; padding: 5px; margin: 0px;" data-toggle="modal" data-target="#donateModal">
-                        DONATE
+                    <a class="nav-link" href="#" style="color: white; background-color:rgb(1, 71, 66); padding: 5px; margin: 0px;" data-toggle="modal" data-target="#donateModal">
+                        DONATE ⇓
                     </a>
                 </li>
             </ul>
@@ -506,7 +671,7 @@ h1 {
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="whatWeDoModalLabel">What we do</h5>
+                <h5 class="modal-title" id="whatWeDoModalLabel">What we do </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -572,18 +737,36 @@ h1 {
         </div>
     </div>
 </div>
+ 
+<div class="swiper" style="margin: 0; padding: 0; width: 100%; top: 80px;">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="images/homepicture.jpg" alt="Picture">
+            <div class="centered-rectangle">
+                <p class="message">KADEC follows an empowerment model, which promotes capacity building, socio-economic, political and sustainable development,</p>
+                <a href="aboutus.html" class="learn-more">
+                    Learn More 
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-<div class="swiper" style="margin: 0;padding: 0;width: 100%; top: 80px;">
+
+<!--<div class="swiper" style="margin: 0;padding: 0;width: 100%; top: 80px;">
     <div class="swiper-wrapper">
         
-        <div class="swiper-slide"><img src="images/desk.jpg"></div>
+        <div class="swiper-slide"><img src="images/Homepict.jpg"></div>
+
         <div class="swiper-slide"><img src="images/solar.jpg"></div>
         <div class="swiper-slide"><img src="images/pic (13).jpg"></div>
         <div class="swiper-slide"><img src="images/school.jpg"></div>
         <div class="swiper-slide"><img src="images/pic (16).jpg"></div>
-        <div class="swiper-slide"><img src="images/pic (17).jpg"></div>
-    </div>
+        <div class="swiper-slide"><img src="images/pic (17).jpg"></div> 
+
+    </div>-->
     
     <div class="swiper-pagination"></div>
     
@@ -592,14 +775,14 @@ h1 {
 </div>
 
     <div class="container mt-5">
-        <div class="row">
+        <div class="row"> 
             <!-- Sections Column -->
             <div class="col-lg-8 col-md-12">
                 <div class="section-container">
                     <div class="down-container" style="margin: -40px; margin-top: 10px; padding: 0; height: fit-content; color: gold;">
                         <h1>
                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse1" aria-expanded="false" aria-controls="objectivesCollapse1" style="background-color: rgba(255, 255, 255, 0.781); width: 90%; border-radius: 20px; margin: 20px; padding: 10px;">
-                                <h1>Our Goals</h1>
+                                <h1>Our Goals ⬅️ </h1>
                             </button>
                         </h1>
                         <div class="collapse" id="objectivesCollapse1" style="margin: 20px; padding: 15px;">
@@ -612,7 +795,7 @@ h1 {
                     <div class="down-container" style="margin: -40px; padding: 50; height: fit-content; color: gold;">
                         <h1>
                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse2" aria-expanded="false" aria-controls="objectivesCollapse2" style="background-color: rgba(255, 255, 255, 0.76); width: 90%; border-radius: 20px; margin: 20px; padding: 10px;">
-                                <h1>Target Groups</h1>
+                                <h1>Target Groups ⬅️  </h1>
                             </button>
                         </h1>
                         <div class="collapse" id="objectivesCollapse2" style="margin: 20px; padding: 15px;">
@@ -625,7 +808,7 @@ h1 {
                     <div class="down-container" style="margin: -40px; padding: -30px; height: fit-content; color: gold;">
                         <h1>
                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#objectivesCollapse3" aria-expanded="false" aria-controls="objectivesCollapse3" style="background-color: rgba(248, 248, 248, 0.774); width: 90%; border-radius: 20px; margin: 10px; padding: 10px;">
-                                <h1>Main Objectives</h1>
+                                <h1>Main Objectives ⬅️</h1>
                             </button>
                         </h1>
                         <div class="collapse" id="objectivesCollapse3">
@@ -655,7 +838,7 @@ h1 {
         </div>
     </div>
 
-<div class="project" style="padding: 10px; margin: 10px; color: rgb(0, 0, 0); background-color: rgba(255, 5, 5, 0.329); overflow: hidden ;border-radius: 50px;">
+<div class="project" style="padding: 10px; margin: 10px; color: rgb(0, 0, 0); background-color: rgb(1, 71, 66);; overflow: hidden ;">
     <h1 style="color: white;"><b>Project In Progress...</b></h1>
     <div class="container2">
         <div class="flip-card">
@@ -722,7 +905,7 @@ h1 {
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="images/purpose.webp" style="object-fit: cover;" alt="Image 4">
+                    <img src="images/purpose.webp" style="object-fit: cover;" alt="Image 4" >
                     <div class="gradient-overlay">
                         <ul>
                             <h1 style="font-size: 28px;"><b>Project purpose</b></h1>
@@ -741,9 +924,9 @@ h1 {
     </div>
 </div>
 
-<div class="project" style="padding: 10px; margin: 5px; color: rgb(0, 0, 0); background-color: rgb(12, 111, 114); overflow: hidden ;border-radius: 50px;">
+<!--<div class="project" style="padding: 10px; margin: 5px; color: rgb(0, 0, 0); background-color: rgba(58, 245, 11, 0); overflow: hidden ;border-radius: 5px;">
     <h1 style="color: white;"><b>other activites taking place</b></h1>
-    <div class="container2">
+    <div class="container2" style="border-radius: 10px;background-color: #9fd8ff;">
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
             <div class="card" style="background-color: aliceblue;">
                 <img src="images/trees.jpg" class="card-img-top" alt="..." style="border-radius: 30px; height: 300px;">
@@ -764,7 +947,7 @@ h1 {
         </div>
         <p class="card-text" style="font-size: large;">Chinsebe river bank protection at Zindi through plating of trees and bananas</p>
         </div>
-    </div>
+    </div>-->
 </div>
 <div class="container mt-5" style="margin-top: 0; padding: 0;">
     <div class="row">
@@ -840,47 +1023,105 @@ h1 {
         
     </div>
 </div>
-<div class="latest" style="border-radius: 50px;">
-    <h1 style="text-align: center;"><b>Latest from KADEC</b></h1>
-    <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="card">
-                <img src="images/population01.jpg">
+
+    
+
+        <div class="body01">
+            <h1 style="margin: 10px ; padding: 5px; color: azure;"><b>Latest from KADEC</b></h1>
+            <div class="container01">
+                <div class="section01 news">
+                    <h2>News</h2>
+
+                    <div class="image-placeholder"> <img src="images/hivmeeting.jpg" alt="" style="height: 150px; width: 250px;"></div>
+                    <p><a href="#">Karonga District Executive Committee (DEC) meeting organised by KADEC , introducing a new project called Bringing HIV information and services to key populations and their communities in Malawi in Karonga District</a></p>
+                    <p>June 3, 2024 | <a href="#">Press Release</a></p>
+
+                    <hr style="border: 1px solid #000; margin: 20px 0;">
+
+                    
+                    <div class="image-placeholder"> <img src="images/footballhosting.jpg" alt="" style="height: 150px; width: 250px;"></div>
+                    <p><a href="#">KADEC hosting football competition at Uliwa primary Ground in Karonga District during community mobilization about Bringing HIV and AIDS information to the  key population in malawi funded by GILEAD  </a></p>
+                    <p>August 16, 2023 | <a href="#">Press Release</a></p>
+                    
+                    <hr style="border: 1px solid #000; margin: 20px 0;">
+
+                    <div class="image-placeholder"> <img src="images/hivtesting.jpg" alt="" style="height: 150px; width: 250px;"></div>
+                    <p><a href="#">HIV Testing and Counselling  at Uliwa primary Ground in Karonga District during community mobilization about Bringing HIV and AIDS information to the  key population in malawi funded by GILEAD </a></p>
+                    <p>SAugust 16, 2023| <a href="#">Press Release</a></p>
+
+                    
+                    <hr style="border: 1px solid #000; margin: 20px 0;">
+
+                    <div class="image-placeholder"> <img src="images/condoms.jpg" alt="" style="height: 150px; width: 250px;"></div>
+                    <p><a href="#">Condom distribution at Uliwa primary Ground in Karonga District during community mobilization about Bringing HIV and AIDS information to the  key population in malawi funded by GILEAD</a></p>
+                    <p>August 16, 2023| <a href="#">Press Release</a></p>
+                </div>
+
+                <div class="section01 stories">
+                    <h2>Stories</h2>
                 
-                <div class="card-body">
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="card">
-                <img src="images/population02.jpg">
+                    <div class="story">
+                        <div class="image-placeholder"><img src="images/mikinayi.jpg" alt="Story Image"></div>
+                        <div class="text-content">
+                            <p><a href="#">Mikinayi Mwamkonda aged 14 years old from the village head Mwakasungula was impregnated by a boy name withheld, while in standard 8</a></p>
+                            <p><a href="story01.html">full story</a></p>
+                            <p>KADEC also facilitated the strengthening of the existing by-laws. And one of the by-laws is that if a girl child gets pregnant, she must go back to school soon after she gives birth.</p>
+                        </div>
+                    </div>
+
+                    
+                    <hr style="border: 1px solid #000; margin: 20px 0;">
                 
-                <div class="card-body">
-                    <p class="card-text">key population trainning.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="card">
-                <img src="images/meeting01.jpg" style="height: 240px;">
-             
-                <div class="card-body">
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="card">
-                <img src="images/meeting02.jpg" style="height: 240px;">
+                    <div class="story">
+                        <div class="image-placeholder"><img src="images/jenifer.jpg" alt="Story Image"></div>
+                        <div class="text-content">
+                            <p><a href="#">Jenifer Ndili is married at a tender age, followed up on her whereabouts to get her back home and school</a></p>
+                            <p><a href="story02.html">full story</a></p>
+                            <p>TKaronga Debate Club through the project supported by UN Women under Women’s Peace and Humanitarian Fund, trained different groups as mentors. One of these groups trained and facilitating mentorship is the Mother Group, which after noticing that Jenifer Ndili is married at a tender age.</p>
+
+                        </div>
+                    </div>
+
+                    
+                    <hr style="border: 1px solid #000; margin: 20px 0;">
                 
-                <div class="card-body">
-                    <p class="card-text">DEC meeting </p>
+                    <div class="story">
+                        <div class="image-placeholder"><img src="images/Eliness.jpg" alt="Story Image"></div>
+                        <div class="text-content">
+                            <p><a href="#">Elliness found herself in a man’s house who claimed that he has married her. While in the locked house where she spent some days and nights</a></p>
+                            <p><a href="story03.html">full story</a></p>
+                            <p>KADEC in partnership with community structures have returned back to school Eliness Mweningubo. Eliness Mweningubo comes from the village of Mwakamogho, T/A Mwakaboko.</p>
+                        </div>
+                    </div>
+                
+                
+                </div>
+
+                
+                <hr style="border: 1px solid #000; margin: 20px 0;">
+                
+                
+                
+                <div class="section01 video">
+                    <h2>Video</h2>
+
+                
+                    <div class="image-placeholder">Community Mobilization by KADEC, Funded by GILEAD<iframe width="350" height="350p" src="https://www.youtube.com/embed/EqrdvFOLRhU" title="Community Mobilization by KADEC, Funded by GILEAD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <p><a href="#">Highlights and Officials Interviews from the recent community mobilization event at Uliwa Primary Ground. The event featured a Football Bonanza tournament, HIV testing and counseling, condom distribution, and civic education on HIV and AIDS through drama performances and presentations by clinical professionals</a></p>
+
+                    <div class="image-placeholder"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F00PA76%2Fvideos%2F910995962838132%2F&show_text=false&width=560&t=0" width="350" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
+                    <p><a href="#">Village headman Sam from Nyungwe community denouncing bad cultural practices that negatively influence SRHR for girls and young women in Malawi particularly Karonga</a></p>
+                    
+                    <div class="image-placeholder">Community Mobilization by KADEC, Funded by GILEAD<iframe width="350" height="350" src="https://www.youtube.com/embed/Igj-5uxR2uE?si=1mWaKnmRKMnhHK8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <p><a href="#"></a></p>
+
+
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
+
+    
 
 <footer>
     <nav class="footer-bar" style="background-color: rgb(0, 0, 19);">
@@ -899,7 +1140,7 @@ h1 {
                             </a>
                         </li>
                         <li class="item" style="margin-left: 15px;">
-                            <a class="nav-link" href="https://www.facebook.com/profile.php?id=100080981792748" style="color: transparent;">
+                            <a class="nav-link" href="https://web.facebook.com/photo/?fbid=395678869419159&set=a.395678839419162&__tn__=%3C" style="color: transparent;">
                                 <img src="images/facebook.png" style="height: 40px"> 
                             </a>
                         </li>

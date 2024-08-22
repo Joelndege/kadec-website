@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful News Page</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(1, 71, 66);
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f8f6f6;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .news-article {
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .news-article img {
+            flex: 1 1 40%;
+            max-width: 30%;
+            object-fit: cover;
+        }
+
+        .news-content {
+            flex: 1 1 60%;
+            padding: 30px;
+        }
+
+        .news-content h2 {
+            color: #444;
+            margin-bottom: 20px;
+            font-size: 2em;
+            line-height: 1.2;
+        }
+
+        .news-content p {
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .news-content .photo-caption {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .news-article {
+                flex-direction: column;
+            }
+
+            .news-content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .news-content h2 {
+                font-size: 1.5em;
+            }
+        }
+        .back-button {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .back-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .back-button a:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Karonga Debate Club</h1>
+        
+        <div class="news-article">
+            <img src="images/Eliness.jpg" alt="News Photo">
+            <div class="news-content">
+                <h2>Success Story</h2>
+                <p class="photo-caption">Eliness Mweningubo </p>
+                <p>Implementing interventions through empowerment model creates long term successes. Through the Promoting Sexual and Reproductive Health and rights for Girls and Young Women project supported by UN Women under Women’s Peace and Humanitarian Fund, KADEC in partnership with community structures have returned back to school Eliness Mweningubo. Eliness Mweningubo comes from the village of Mwakamogho, T/A Mwakaboko.   Eliness is one of the victims of harmful cultural practices existing in the community. In her story, Eliness Mweningubo who is attending form 2 at Iponga CDSS shows KUPIMBIRA is the situation she encountered.
+                    In October 2020 during late hours, the church organized a choir festival which Elliness   attended and that’s   where the entire story began. While enjoying the moment she thought of going out to ease herself for a little time outside, she was abducted by 5men which was against her consent and she found herself in a man’s house who claimed that he has married her. While in the locked house where she spent some days and nights,  Elliness escaped and went back to her parents. When the news was known to the Mother groups and Youth groups, the team took a step to approach her and encouraged her to go back to school. These are some of the groups that have been strengthened by project and working at community level in promoting sexual reproductive health and rights for girls and young women. Now Elliness is back in school continuing her form two at Iponga CDSS after staying at home for a year.
+                 </p>
+                 <div class="back-button">
+                    <a href="index.html">Back to Home</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

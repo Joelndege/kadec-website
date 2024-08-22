@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful News Page</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(1, 71, 66);
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .news-article {
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .news-article img {
+            flex: 1 1 40%;
+            max-width: 30%;
+            object-fit: cover;
+        }
+
+        .news-content {
+            flex: 1 1 60%;
+            padding: 30px;
+        }
+
+        .news-content h2 {
+            color: #444;
+            margin-bottom: 20px;
+            font-size: 2em;
+            line-height: 1.2;
+        }
+
+        .news-content p {
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .news-content .photo-caption {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .news-article {
+                flex-direction: column;
+            }
+
+            .news-content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .news-content h2 {
+                font-size: 1.5em;
+            }
+        }
+        .back-button {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .back-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .back-button a:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Karonga Debate Club</h1>
+        
+        <div class="news-article">
+            <img src="images/jenifer.jpg" alt="News Photo">
+            <div class="news-content">
+                <h2>Success Story</h2>
+                <p class="photo-caption">Jenifer Ndili</p>
+                <p>One of the common factors that affect the promotion of SRHR in Karonga District is child marriages. Child marriage is a human rights violation, which denies thousands of girls their childhood in the district. Jenifer Ndili who comes from Traditional Authority Mwirang’ombe got pregnant at the age of 14 years while in standard 6. The girl had no choice but dropped from school and got married.
+                    Karonga Debate Club through the project supported by UN Women under Women’s Peace and Humanitarian Fund, trained different groups as mentors. One of these groups trained and facilitating mentorship is the Mother Group, which after noticing that Jenifer Ndili is married at a tender age, followed up on her whereabouts to get her back home and school, in which they succeeded. Jenifer  Ndili has gone back to school after a discussion between parents and the mother group. Jenifer and her parents were educated on the importance of educating retaining a girl child at school and also educated that it’s against the law allowing young girls to marriage. 
+                    In her first days at school, Jennifer faced challenges from her peers who were mocking and laughing at her. This affected her performance and attendance in which she thought of dropping school. However, the teachers encouraged her by giving her emotional support and trained the other students to accept Jennifer’s situation.  The Mother group is always there to check on her at home and school, both to provide psychosocial support and advice towards her education.  Jennifer has promised to work hard and set as an example in the years to come, to say ‘girls can do it despite the challenges’. Though, the girl is lacking support in her everyday life.
+                    </p>
+                    <div class="back-button">
+                        <a href="index.html">Back to Home</a>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

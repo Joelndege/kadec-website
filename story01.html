@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful News Page</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(1, 71, 66);
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .news-article {
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .news-article img {
+            flex: 1 1 40%;
+            max-width: 30%;
+            object-fit: contain;
+        }
+
+        .news-content {
+            flex: 1 1 60%;
+            padding: 30px;
+        }
+
+        .news-content h2 {
+            color: #444;
+            margin-bottom: 20px;
+            font-size: 2em;
+            line-height: 1.2;
+        }
+
+        .news-content p {
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .news-content .photo-caption {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .news-article {
+                flex-direction: column;
+            }
+
+            .news-content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .news-content h2 {
+                font-size: 1.5em;
+            }
+        }
+        .back-button {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .back-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .back-button a:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Karonga Debate Club</h1>
+        
+        <div class="news-article">
+            <img src="images/mikinayi.jpg" alt="News Photo">
+            <div class="news-content">
+                <h2>Success Story</h2>
+                <p class="photo-caption">Mikinayi Mwamkonda</p>
+                <p>Community based approach helps to achieve sustainable results in GVH Mwakasangila in Traditional Kilupula, Karonga, Malawi. Following KADEC interventions under “Promoting Sexual and Reproductive Health Right for Girls and Young Women in Malawi” with support from UN-WOMEN under Women’s Peace and Humanitarian Fund,  community based youth structures in Traditional Authority Kilupula have taken back to school a girl who got pregnant while at the age of  14 years. 
+                    It was in April 2021, when KADEC started implementation of the project known as Promoting SRHR for girls and young women in Karonga District.  What prompted KADEC to design and implement this project   was that there was high rate of early pregnancies and child marriages in the District. Major factors are rooted in extreme poverty, gender inequality and discriminatory social norms and harmful practices. Hence, girls and young women opt to indulge themselves into sexual activities in order to get assisted since parents are unable to meet their basic needs as poverty is a big challenge in the district.Traditional Authority of Kilupula is one of the project impact areas, and Teachers were oriented; community and school based structures were strengthened with the view to safeguard the life of a girl child in the community. KADEC also facilitated the strengthening of the existing by-laws. And one of the by-laws is that if a girl child gets pregnant, she must go back to school soon after she gives birth.  Therefore, a girl named Mikinayi Mwamkonda aged 14 years old from the village head Mwakasungula was impregnated by a boy name withheld, while in standard 8. At that time, the girl was in the course of writing the 2019 standard eight final exams. She was selected for form one at Kasoba CDSS but Mikinayi’s   dream to continue with her studies was shuttered and she lost hope. However, the coming in of the project for promoting Sexual and Reproductive Health Right for Girls and Young Women, Chimwemwe Youth Movement which was trained by KADEC as youth pioneering movement, fought hard  to change Mikinayi’s fate. The group organized a meeting with Mikinayi’s parents and discussed her future which at the end they agreed of getting her back to school. The poor child smiled again believing that the lost hope has been regained. 
+                    Mikinayi is now back to school this year 2021 and started form one at Kasoba CDSS, while her child is being taken care of, by her mother. Mikinayi has gone back to school believing her child is in safe hands of her mother and she is able to focus on her secondary education.
+                    However, the challenge still remains of financial support of school fees and other materials such as books, uniform and pens which the family cannot afford. In view of this, Chimwemwe Youth Movement in collaboration with KADEC have organised a fundraising activity on 24th December, 2021 at Miyombo Resource centre to raise funds so that Mikinayi and other four girls are supported with educational materials. 
+                    </p>
+                    <div class="back-button">
+                        <a href="index.html">Back to Home</a>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
