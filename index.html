@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NEK0TJ5LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4NEK0TJ5LX');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karonga debate club</title>
@@ -61,8 +70,8 @@
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the rectangle */
-    background: rgba(0, 95, 107, 0.74); /* Blue transparent background */
-    color: white;
+    background: rgba(255, 217, 0, 0.575); /* Blue transparent background */
+    color: rgb(0, 8, 77);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,11 +81,23 @@
     box-sizing: border-box; /* Ensures padding doesn't increase size */
     border-radius: 20px;
 }
+@media  (max-width: 768px) {
+    .centered-rectangle {
+        width: 350px;
+        height: 150px;
+        top: 75%;
+
+    }
+    
+}
 
 .message {
     margin: 0;
     font-size: 1rem;
 }
+
+
+
 
 .learn-more {
     margin-top: 10px;
@@ -182,16 +203,25 @@
     }
 
     .container2 {
-            margin-top: 50px;
+            margin-top: 5px;
             display: grid;
             gap: 10px;
             object-fit: cover;
             text-align: left;
+            padding-left: 0px;
+
          
         }
+        
+    @media (max-width: 768px) {
+        .flip-card {
+            width: 100%;
+        }
+    }
+
         h1 {
     text-align: center;
-}
+      }
 
 h1 {
     text-align: center;
@@ -205,15 +235,34 @@ h1 {
     overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
     padding: 10px; /* Optional: Adds padding inside the container */
     background-color: #f0f0f0; /* Optional: Adds a background color */
+
+}
+/* Default card styling */
+.flip-card {
+  width: 300px; /* Set a default width */
+  height: 300px; /* Set a default height */
+  margin: 0 auto; /* Center the card */
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 400px;
-    perspective: 1000px;
-    border-radius: 20px; /* Optional: Rounds the corners of each flip card */
+/* Flip card content */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
+
+/* Flip card on mobile screens */
+@media screen and (max-width: 768px) {
+  .flip-card {
+    width: 100%; /* Set width to 100% for mobile screens */
+    height: 400px; /* Increase the height on mobile screens */
+  }
+}
+
+
 
 .flip-card-inner {
     position: relative;
@@ -838,8 +887,9 @@ p, a {
         </div>
     </div>
 
-<div class="project" style="padding: 10px; margin: 10px; color: rgb(0, 0, 0); background-color: rgb(1, 71, 66);; overflow: hidden ;">
-    <h1 style="color: white;"><b>Project In Progress...</b></h1>
+<div class="project" style="padding: 0px; margin: 0px; color: rgb(0, 0, 0); background-color: rgb(1, 71, 66);; overflow: hidden ;">
+   
+    <h1 style="color: rgb(0, 0, 0); background-color: #ffee00; margin-left: 90px;margin-top: 10px; margin-right: 90px; padding: 20px; border-radius: 20px;"><b>Project In Progress...</b></h1>
     <div class="container2">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -1106,13 +1156,17 @@ p, a {
                     <h2>Video</h2>
 
                 
-                    <div class="image-placeholder">Community Mobilization by KADEC, Funded by GILEAD<iframe width="350" height="350p" src="https://www.youtube.com/embed/EqrdvFOLRhU" title="Community Mobilization by KADEC, Funded by GILEAD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="image-placeholder">Community Mobilization by KADEC, Funded by GILEAD<iframe width="350" height="250p" src="https://www.youtube.com/embed/EqrdvFOLRhU" title="Community Mobilization by KADEC, Funded by GILEAD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
                     <p><a href="#">Highlights and Officials Interviews from the recent community mobilization event at Uliwa Primary Ground. The event featured a Football Bonanza tournament, HIV testing and counseling, condom distribution, and civic education on HIV and AIDS through drama performances and presentations by clinical professionals</a></p>
 
-                    <div class="image-placeholder"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F00PA76%2Fvideos%2F910995962838132%2F&show_text=false&width=560&t=0" width="350" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
+                    <hr style="border: 1px solid #000; margin: 20px 0;">
+
+                    <div class="image-placeholder"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F00PA76%2Fvideos%2F910995962838132%2F&show_text=false&width=560&t=0" width="350" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
                     <p><a href="#">Village headman Sam from Nyungwe community denouncing bad cultural practices that negatively influence SRHR for girls and young women in Malawi particularly Karonga</a></p>
                     
-                    <div class="image-placeholder">Community Mobilization by KADEC, Funded by GILEAD<iframe width="350" height="350" src="https://www.youtube.com/embed/Igj-5uxR2uE?si=1mWaKnmRKMnhHK8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <hr style="border: 1px solid #000; margin: 20px 0;">
+
+                    <div class="image-placeholder">Community Mobilization by KADEC, Funded by GILEAD<iframe width="350" height="250" src="https://www.youtube.com/embed/Igj-5uxR2uE?si=1mWaKnmRKMnhHK8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
                     <p><a href="#"></a></p>
 
 
