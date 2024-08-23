@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+        <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NEK0TJ5LX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
 
     <style>
        
@@ -70,7 +71,7 @@
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the rectangle */
-    background: rgba(255, 217, 0, 0.575); /* Blue transparent background */
+    background: rgb(255, 217, 0); /* Blue transparent background */
     color: rgb(0, 8, 77);
     display: flex;
     flex-direction: column;
@@ -641,11 +642,25 @@ p, a {
 
 .text-content {
     flex: 1; 
+    margin-left: 40px;
 }
 
 .text-content p {
     margin: 0 0 2px; 
 }
+/* Default styling for the story paragraph */
+.responsive-text {
+    font-size: 16px; /* Default font size */
+}
+
+/* Media query for screens 768px wide or smaller */
+@media only screen and (max-width: 768px) {
+    .responsive-text {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+        left: 20px;
+    }
+}
+
 
 
     </style>
@@ -1113,7 +1128,11 @@ p, a {
                     <div class="story">
                         <div class="image-placeholder"><img src="images/mikinayi.jpg" alt="Story Image"></div>
                         <div class="text-content">
-                            <p><a href="#">Mikinayi Mwamkonda aged 14 years old from the village head Mwakasungula was impregnated by a boy name withheld, while in standard 8</a></p>
+                            <p class="responsive-text">
+                                <a href="#">
+                                    Mikinayi Mwamkonda aged 14 years old from the village head Mwakasungula was impregnated by a boy name withheld, while in standard 8
+                                </a>
+                           </p>
                             <p><a href="story01.html">full story</a></p>
                             <p>KADEC also facilitated the strengthening of the existing by-laws. And one of the by-laws is that if a girl child gets pregnant, she must go back to school soon after she gives birth.</p>
                         </div>
@@ -1125,7 +1144,11 @@ p, a {
                     <div class="story">
                         <div class="image-placeholder"><img src="images/jenifer.jpg" alt="Story Image"></div>
                         <div class="text-content">
-                            <p><a href="#">Jenifer Ndili is married at a tender age, followed up on her whereabouts to get her back home and school</a></p>
+                            <p class="responsive-text">
+                                <a href="#">
+                                    Jenifer Ndili is married at a tender age, followed up on her whereabouts to get her back home and school
+                                </a>
+                            </p>
                             <p><a href="story02.html">full story</a></p>
                             <p>TKaronga Debate Club through the project supported by UN Women under Women’s Peace and Humanitarian Fund, trained different groups as mentors. One of these groups trained and facilitating mentorship is the Mother Group, which after noticing that Jenifer Ndili is married at a tender age.</p>
 
@@ -1134,17 +1157,23 @@ p, a {
 
                     
                     <hr style="border: 1px solid #000; margin: 20px 0;">
-                
                     <div class="story">
-                        <div class="image-placeholder"><img src="images/Eliness.jpg" alt="Story Image"></div>
+                        <div class="image-placeholder">
+                            <img src="images/Eliness.jpg" alt="Story Image">
+                        </div>
                         <div class="text-content">
-                            <p><a href="#">Elliness found herself in a man’s house who claimed that he has married her. While in the locked house where she spent some days and nights</a></p>
-                            <p><a href="story03.html">full story</a></p>
-                            <p>KADEC in partnership with community structures have returned back to school Eliness Mweningubo. Eliness Mweningubo comes from the village of Mwakamogho, T/A Mwakaboko.</p>
+                            <p class="responsive-text">
+                                <a href="#">
+                                    Elliness found herself in a man’s house who claimed that he has married her. While in the locked house where she spent some days and nights
+                                </a>
+                            </p>
+                            <p><a href="story03.html">Full story</a></p>
+                            <p>
+                                KADEC in partnership with community structures have returned back to school Eliness Mweningubo. Eliness Mweningubo comes from the village of Mwakamogho, T/A Mwakaboko.
+                            </p>
                         </div>
                     </div>
-                
-                
+                    
                 </div>
 
                 
@@ -1156,17 +1185,17 @@ p, a {
                     <h2>Video</h2>
 
                 
-                    <div class="image-placeholder">Community Mobilization by KADEC, Funded by GILEAD<iframe width="350" height="250p" src="https://www.youtube.com/embed/EqrdvFOLRhU" title="Community Mobilization by KADEC, Funded by GILEAD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="image-placeholder" style="font-size: 20px;">Community Mobilization by KADEC, Funded by GILEAD<iframe width="320" height="300p" src="https://www.youtube.com/embed/EqrdvFOLRhU" title="Community Mobilization by KADEC, Funded by GILEAD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
                     <p><a href="#">Highlights and Officials Interviews from the recent community mobilization event at Uliwa Primary Ground. The event featured a Football Bonanza tournament, HIV testing and counseling, condom distribution, and civic education on HIV and AIDS through drama performances and presentations by clinical professionals</a></p>
 
                     <hr style="border: 1px solid #000; margin: 20px 0;">
 
-                    <div class="image-placeholder"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F00PA76%2Fvideos%2F910995962838132%2F&show_text=false&width=560&t=0" width="350" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
+                    <div class="image-placeholder"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F00PA76%2Fvideos%2F910995962838132%2F&show_text=false&width=560&t=0" width="320" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></div>
                     <p><a href="#">Village headman Sam from Nyungwe community denouncing bad cultural practices that negatively influence SRHR for girls and young women in Malawi particularly Karonga</a></p>
                     
                     <hr style="border: 1px solid #000; margin: 20px 0;">
 
-                    <div class="image-placeholder">Community Mobilization by KADEC, Funded by GILEAD<iframe width="350" height="250" src="https://www.youtube.com/embed/Igj-5uxR2uE?si=1mWaKnmRKMnhHK8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="image-placeholder" style="font-size: 20px;">Community Mobilization by KADEC, Funded by GILEAD<iframe width="320" height="300" src="https://www.youtube.com/embed/Igj-5uxR2uE?si=1mWaKnmRKMnhHK8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
                     <p><a href="#"></a></p>
 
 
